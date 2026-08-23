@@ -1,0 +1,43 @@
+# --- Dependencies ---
+node_modules
+.pnpm-debug.log
+
+# --- Turborepo ---
+.turbo
+
+# --- Build Outputs ---
+dist
+out
+build
+.react-router
+*.tsbuildinfo
+
+# --- Environment / Secrets ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.venv 
+
+# --- Cloudflare --- 
+.wrangler
+.dev.vars 
+
+
+# --- OS / IDE ---
+.DS_Store
+.vscode
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# --- Stuff --- 
+.notes/
+.ds-ml/
+seed-sql/
+migrations/
+ideation/

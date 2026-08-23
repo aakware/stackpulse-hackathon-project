@@ -1,0 +1,6 @@
+export default {
+  '*.{js,jsx,ts,tsx}': [
+    'oxlint --fix',
+    'oxfmt --write'
+  ]
+};
