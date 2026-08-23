@@ -1,0 +1,43 @@
+{
+	"name": "web",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "react-router build",
+		"cf-typegen": "wrangler types",
+		"deploy": "pnpm run build && wrangler deploy",
+		"dev": "react-router dev",
+		"postinstall": "npm run cf-typegen",
+		"preview": "pnpm run build && vite preview",
+		"typecheck": "npm run cf-typegen && react-router typegen && tsc -b"
+	},
+	"dependencies": {
+		"@heroui/react": "^3.0.5",
+		"@heroui/styles": "^3.0.5",
+		"@india-boundary-corrector/leaflet-layer": "^0.2.2",
+		"@nivo/core": "^0.88.0",
+		"@nivo/line": "^0.88.0",
+		"isbot": "^5.1.31",
+
+		"leaflet": "^1.9.4",
+		"lucide-react": "^0.475.0",
+		"react": "^19.1.1",
+		"react-dom": "^19.1.1",
+		"react-leaflet": "^5.0.0",
+		"react-router": "^7.10.0"
+	},
+	"devDependencies": {
+		"@cloudflare/vite-plugin": "^1.13.5",
+		"@react-router/dev": "^7.10.0",
+		"@tailwindcss/vite": "^4.1.13",
+		"@types/leaflet": "^1.9.16",
+		"@types/node": "^22",
+		"@types/react": "^19.1.13",
+		"@types/react-dom": "^19.1.9",
+		"tailwindcss": "^4.1.13",
+		"typescript": "^5.9.2",
+		"vite": "^7.1.7",
+		"vite-tsconfig-paths": "^5.1.4",
+		"wrangler": "^4.125.0"
+	}
+}
