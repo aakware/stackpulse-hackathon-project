@@ -1,0 +1,16 @@
+{
+  "name": "api",
+  "main": "src/index.ts",
+  "compatibility_date": "2024-04-03",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "serverless-mono-db",
+      "database_id": "c1f7b8db-4e12-4cf0-9abd-bf18420f2da2",
+      "migrations_dir": "../../packages/data/migrations" // Path relative to wrangler.jsonc
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}
