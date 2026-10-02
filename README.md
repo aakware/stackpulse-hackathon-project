@@ -1,4 +1,4 @@
-<div align="center">
+ <div align="center">
 
 # 🔥 NASA FIRMS & OSM Thermal Intelligence
 ### AI-Based Detection & Probabilistic Classification of Industrial Fires & Persistent Thermal Sources
